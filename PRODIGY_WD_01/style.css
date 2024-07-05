@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    height: 100%;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    background-image: url("./Images/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.navbar {
+    width: 90%;
+    margin: auto;
+    height: 15vh;
+}
+
+.navbar .logo{
+    width:60px;
+    height: 60px;
+    background-color: transparent;
+    border:3px solid black;
+    border-radius: 50%;
+    border-right-color: transparent;
+    position: relative;
+}
+
+.navbar .logo::before{
+    content: "HarmoniQ";
+    color: black;
+    font-size: 35px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-10%,-50%);
+    font-family: 'Arizonia', cursive;
+}
+
+.navbar, .navlist{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+}
+
+.navlist li{
+    margin: 0 5px;
+    padding: 15px;
+}
+
+.navlist a{
+    color: black;
+    font-size: 18px ;
+    font-weight: bold;
+    padding: 0.3rem 1.0rem;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+}
+
+.navbar a:hover{
+    color: rgb(152, 96, 205);
+    transition: 0.3s;
+}
+
+.navlist a::after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: 0px;
+    border-radius: 10px;
+    background-color: rgb(250, 233, 233);
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.navlist a:hover::after {
+   width: 100%;
+}
+
+h1
+{
+    font-size: 3.7rem;
+}
+
+.heading {
+    font-size: 50px;
+    letter-spacing: 0.1rem;
+}
+
+.hero {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       margin: 0;
+       padding: 150px;
+       padding-top: 150px;
+       padding-right: 1000px;
+       padding-bottom: 350px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.btn {
+    display: flex;
+    border: none;
+    color: white;
+    padding: 15px 50px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    background-color: black;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover{
+    background-color: whitesmoke; 
+    color: #000;
+
+}
