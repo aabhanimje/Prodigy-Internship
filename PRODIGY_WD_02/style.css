@@ -1,32 +1,39 @@
 *,
-*:before
-*:after{
-    padding:0;
-    margin:0;
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
-body{
-    background: rgb(82, 196, 224);
+body {
+    background: rgb(157, 69, 186);
 }
 
-.container{
+.container {
     background-color: antiquewhite;
     width: 40%;
     min-width: 500px;
     position: absolute;
-    transform: translate(-50% , -50%);
+    transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
     padding: 20px 0;
     padding-bottom: 50px;
     border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0.338);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.338);
 }
 
-.timer-display{
+h1 {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.timer-display {
     position: relative;
-    width: 79%;
+    width: 92%;
     background: antiquewhite;
     left: 4%;
     font-family: 'Roboto mono', monospace;
@@ -37,10 +44,10 @@ body{
     align-items: center;
     justify-content: space-around;
     border-radius: 5px;
-    box-shadow: 0 0 20px rgba(65, 5, 145,0.25);
+    box-shadow: 0 0 20px rgba(65, 5, 145, 0.25);
 }
 
-.buttons{
+.buttons {
     width: 90%;
     margin: 60px auto 0 auto;
     display: flex;
@@ -51,7 +58,7 @@ body{
     width: 120px;
     height: 45px;
     background-color: rgb(70, 244, 39);
-    color: aliceblue;
+    color: #000000;
     border: none;
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
@@ -60,14 +67,46 @@ body{
     outline: none;
 }
 
-.buttons button:nth-last-child(2) {
+.buttons button:nth-last-child(3) {
     background-color: rgb(225, 10, 10);
 }
 
-.buttons button:nth-last-child(1) {
+.buttons button:nth-last-child(2) {
     background-color: rgb(241, 223, 14);
 }
 
+.buttons button:nth-last-child(1) {
+    background-color: rgb(70, 130, 180);
+}
+
 .buttons button:hover {
-    box-shadow: 0 0 20px rgba(0, 0, 0.25);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+}
+
+.lap-times {
+    margin-top: 20px;
+    padding: 10px;
+    background: antiquewhite;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(65, 5, 145, 0.25);
+}
+
+.lap-times h2 {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: #000000;
+}
+
+.lap-times ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lap-times ul li {
+    font-family: 'Roboto mono', monospace;
+    color: #8c52ff;
+    font-size: 20px;
+    padding: 5px;
+    text-align: center;
 }
